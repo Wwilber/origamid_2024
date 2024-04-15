@@ -1,0 +1,41 @@
+ES6 - 002.MP4:
+
+- CRIAR UM DOCUMENTO HTML(index.html);
+- CRIAR UM DOCUMENTO JAVASCRIPT(script.js);
+- LINKAR O SCRIPT AO HTML:
+<script src="script.js"></script>
+
+** PODERIA TAMBÉM ESCREVER O JAVASCRIPT DIRETO NO HTML:
+<script> console.log ('wilber Ribeiro'); </script>
+
+2. CRIAR VARIÁVEIS: guarda dados na memória:
+var: var nome = 'andré'; -- menos utilizado hoje em dia.
+let: idade = 28;
+const: possuiFaculdade = true;
+
+sintaxe: tipo variável + nome variavel = valor da variável
+
+Case Sensitive: nome é diferente Nome.
+
+HOSTING:
+As variáveis são movidas para cima do código, mas os valores não são movidos.
+
+-- retorna undefined por o valor da variável estar abaixo do console.log:
+console.log(comida)
+var comida = 'arroz'
+
+-- retorna cerveja por o valor da variável estar acima do console.log:
+var bebida = 'cerveja'
+
+
+
+**** TIPOS DE DADOS: 7 tipos primitivos == imutáveis; -  exceto o object.
+var nome = 'andré'; // string
+var idade = 28; //number
+var possuiFaculdade = true; // boolean
+var time; undefined
+var comida = null; // null 
+var simbolo = symbol() // symbol
+var novoObjeto = {} // object
+
+teste2
