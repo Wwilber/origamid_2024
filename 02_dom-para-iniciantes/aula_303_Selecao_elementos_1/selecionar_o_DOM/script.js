@@ -1,26 +1,31 @@
-// console.log('---consulta do elemento por ID:')
-// const animais = document.getElementById('animais')
-// console.log(animais)
+// 1 - SELEÇÃO DO ELEMENTOS POR ID:
 
-// console.log(
-//   '--- consulta do elemento por ID e mostrar o texto do elemento: animais.innerText'
-// )
-// console.log(animais.innerText)
+console.log('1. ---CONSULTA DE ELEMENTOS POR - ID:')
+const animais = document.getElementById('animais')
+console.log(animais)
 
-// // PEGA UMA LISTA DE ELEMENTOS POR CLASS OU TAG(ao vivo e ainda retorna um HTMLCollection):
-// console.log('---consulta dos elementos por classe:')
-// const gridSection = document.getElementsByClassName('grid-section')
-// console.log(gridSection)
+console.log(
+  '1.1. --- CONSULTA DO ELEMENTO POR ID e MOSTRAR O TEXTO DO ELEMENTO: animais.innerText'
+)
+console.log(animais)
+console.log(animais.innerText)
 
-// const gridSection2 = document.getElementsByClassName('grid-section contato')
-// console.log(gridSection2)
+// 2 - SELEÇÃO DE ELEMENTOS POR CLASSE OU TAG(ao vivo e ainda retorna um HTMLCollection):
+console.log('2. ---CONSULTA DOS ELEMENTOS POR CLASSE:')
+const gridSection = document.getElementsByClassName('grid-section')
+console.log(gridSection)
 
-// console.log(gridSection.length)
-// console.log(gridSection[0])
+const gridSection2 = document.getElementsByClassName('grid-section faq')
+console.log(gridSection2)
 
-// console.log('---consulta dos elementos por classe:')
-// const primeiraLi = document.querySelector('li')
-// console.log(primeiraLi)
+console.log(gridSection.length)
+console.log(gridSection[0])
+
+console.log(
+  '3. --- CONSULTA DOS ELEMENTOS PELO SELETOR: PARA CLASSE: .animais; PARA ID: #contato e etc...:'
+)
+const primeiraLi = document.querySelector('li')
+console.log(primeiraLi)
 
 // const primeiraUl = document.querySelector('ul')
 // console.log(primeiraUl)
@@ -51,4 +56,4 @@
 // console.log(arrayGrid)
 
 // arrayGrid.pop()
-// console.log(arrayGrid)
+//console.log(arrayGrid)

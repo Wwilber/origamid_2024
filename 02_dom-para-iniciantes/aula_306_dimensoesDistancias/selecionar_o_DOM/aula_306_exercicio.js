@@ -13,6 +13,7 @@ function somaImagem() {
   })
   console.log(soma)
 }
+// Função some
 window.onload = function () {
   somaImagem()
 }

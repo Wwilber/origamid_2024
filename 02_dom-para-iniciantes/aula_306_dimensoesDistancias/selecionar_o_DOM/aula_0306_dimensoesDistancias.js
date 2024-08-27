@@ -1,3 +1,5 @@
+// SHOWCONSOLEDRAWER OU ESC NO INSPECIONAR = ABRE OUTRA ABA DE CONSOLE.
+
 // Height e Width: Estas saão propriedades e métodos dos objetos Element e HTMLElement, a maioria delas são Read Only:
 
 const section = document.querySelector('.animais')
@@ -43,7 +45,7 @@ if (window.innerWidth < 600) {
 
 // matchMedia(): Utilize um media-querie como no CSS para verificar a largura do browser:
 
-const small = window.matchMedia('(max-width: 600px')
+const small = window.matchMedia('(max-width: 600px').matches
 
 if (small.matches) {
   console.log(`Tela menor que 600px' ${small.matches}`)

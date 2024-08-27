@@ -1,31 +1,44 @@
+// // AddEventListener: Adiciona uma funç~]ao ao elemento, esta chamada de CALLBACK, que será ativada assim que certo EVENTO ocorrer neste elemento:
+
 // const img = document.querySelector('img')
-// // console.log(img)
-// // img.addEventListener('click', () => {
-// //   console.log('clicou')
-// // })
+// console.log(img)
+
+// // FORMA 01 de criar função(arrow function):
+// img.addEventListener('click', () => {
+//   console.log('clicou no lobo')
+// })
+
+// // FORMA 02 de criar função:
+// const img2 = document.querySelector('img')
+// console.log(img2)
 
 // function callback() {
 //   console.log('cliquei')
 // }
+// img2.addEventListener('click', callback)
 
-// img.addEventListener('click', callback)
-
+// // FORMA 03 de criar função:
 // const img3 = document.querySelector('img')
+// console.log(img3)
+// img3.addEventListener('click', function () {
+//   console.log('forma 03')
+// })
+
+// // EVENT: O primeiro parâmetro do callback é referente ao evento que ocorreu:
+// const img4 = document.querySelector('img')
+// console.log(img4)
 // function callback(event) {
 //   console.log(event)
 // }
-
-// img.addEventListener('click', callback)
+// img4.addEventListener('click', callback)
 
 // const animaisLista = document.querySelector('.animais-lista')
-
 // function callbackLista(event) {
 //   console.log(event.currentTarget)
 //   console.log(event.target)
-//   console.log(event.type)
-//   console.log(event.path)
+//   // console.log(event.type)
+//   // console.log(event.path)
 // }
-
 // animaisLista.addEventListener('click', callbackLista)
 
 // function executarCallback(event) {
@@ -35,6 +48,8 @@
 //   const path = event.path
 //   console.log(currentTarget, target, type, path)
 // }
+
+// event.preventDefault(): PREVINE O COMPORTAMENTO PADRÃO DO EVENTO NO BROWSER. NO CASO DE UM LINK EXTERNO, POR EXEMPLO, IRÁ PREVENIR QUE O LINK SEJA ATIVADO.
 
 // const linkExterno = document.querySelector('a[href^="http"]')
 
@@ -192,12 +207,12 @@
 
 // todosElementos.forEach(item => {
 //   item.addEventListener('click', callbackTipo)
-// })
+// // })
 
-function aumentarLetra(event) {
-  if (event.key === 't') {
-    document.documentElement.classList.toggle('aumentaLetra')
-  }
-}
+// function aumenarLetra(event) {
+//   if (event.key === 't') {
+//     document.documentElement.classList.toggle('aumentaLetra')
+//   }
+// }
 
-window.addEventListener('keydown', aumentarLetra)
+// window.addEventListener('keydown', aumentarLetra)t

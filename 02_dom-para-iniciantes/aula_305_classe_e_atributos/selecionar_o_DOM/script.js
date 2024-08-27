@@ -1,48 +1,62 @@
-// const menu = document.querySelector('.menu')
-// console.log('mostra a classe selecionada', menu)
+const menu = document.querySelector('.menu')
+console.log('mostra a classe selecionada:', menu)
+// mostra uma lista de classes e elementos da classe menu:
+console.log('listagem de classes da classe menu:', menu.classList)
+console.log('primeira classe: ', menu.classList[0])
+console.log('segunda classe: ' + menu.classList[1])
 
-// // mostra uma lista de classes e elementos da classe menu:
-// console.log(menu.classList)
-// console.log(menu.classList[0])
-// console.log(menu.classList[1])
+//mostra a string da classe menu:
+console.log('a string é:', menu.className)
 
-// // mostra a string da classe menu:
-// console.log(menu.className)
+// adicionar a classe ativo:
+menu.classList.add('ativo', 'teste')
+console.log(menu.classList)
+console.log('--------------------------')
 
-// // adicionar a classe ativo:
-// menu.classList.add('ativo')
-// // remover a classe azul:
-// menu.classList.remove('azul')
+// remover a classe azul:
+menu.classList.remove('azul')
+console.log(menu.classList)
 
-// menu.classList.add('sempreAtivo', 'amarelo')
+menu.classList.add('sempreAtivo', 'amarelo')
+// toggle - adiciona uma classe se não existir:
+menu.classList.toggle('azul')
 
-// menu.classList.toggle('azul')
-// // menu.classList.toggle('azul')
+// toggle - remove uma classe se existir:
+menu.classList.toggle('azul')
 
-// if (menu.classList.contains('azul')) {
-//   menu.classList.add('possui-azul')
-// }
-// menu.classList.remove('azul')
+// contains = se possuir:
+if (menu.classList.contains('ativo')) {
+  menu.classList.add('possui-azul')
+}
 
-// console.log(menu.classList[1])
+menu.classList.remove('azul')
 
-// console.log(menu.classList[2])
+console.log(menu.classList[1])
 
-// // console.log(menu.className)
-// // menu.className = 22
-// // menu.className = menu.className + ' este é um teste para concatenar string'
+console.log(menu.classList[2])
 
-// // menu.className += ' este é um teste para concatenar string'
-// // console.log(menu.className)
+console.log(menu.className)
+menu.className = 22
+menu.className = 'menu'
+menu.className = menu.className + ' este é um teste para concatenar string'
 
-// // const animais = document.querySelector('.animais')
-// // console.log(animais)
-// // console.log(animais.attributes) // retorna todos os atributos.
-// // console.log(animais.attributes[0]) // retorna o primeiro atribuito
-// // console.log(animais.attributes['data-texto']) // retorna o primeiro atribuito
+menu.className += ' este é um teste para concatenar string'
+console.log(menu.className)
+console.log('--------------------------')
+console.log('--------------------------')
 
-// // const img = document.querySelector('img')
-// // console.log(img.getAttribute('src'))
+// const animais = document.querySelector('.animais')
+// console.log(animais)
+// console.log(animais.attributes)
+// console.log(animais.attributes[1])
+// console.log(animais.attributes.id)
+
+// console.log(animais.attributes) // retorna todos os atributos.
+// console.log(animais.attributes[0]) // retorna o primeiro atribuito
+// console.log(animais.attributes['data-texto']) // retorna o primeiro atribuito
+
+// const img = document.querySelector('img')
+// console.log(img.getAttribute('alt'))
 
 // // const pesquisa = img.getAttribute('alt')
 // // console.log(pesquisa) // muda o alt
