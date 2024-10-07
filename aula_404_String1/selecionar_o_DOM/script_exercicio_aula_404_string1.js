@@ -39,7 +39,7 @@ transacoes.forEach(item => {
     recebimentoTotal += numeroLimpo
   }
 })
-console.log(taxaTotal)
+console.log('A taxa total é de: ', taxaTotal)
 console.log(recebimentoTotal)
 
 // Retorne um array com a lista abaixo:
@@ -92,3 +92,8 @@ transacoes2.forEach(item => {
   }
   console.log(taxasTotal)
 })
+
+const preco = 10.32323
+console.log(+preco.toFixed(4) + 10)
+console.log(parseFloat(preco.toFixed(3)) + 10)
+console.log((parseFloat(preco) + 20).toFixed(2))
